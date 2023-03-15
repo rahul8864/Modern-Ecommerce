@@ -17,6 +17,7 @@
   --box-shadow-0000001a: #0000001a;
   --box-shadow-ededed: #ededed;
   --box-shadow-777777: #777777;
+  --box-shadow-1c1c1b: #1c1c1b;
 }
 
 .section-heading {
@@ -277,3 +278,24 @@ footer .input-group-text {
   color: var(--box-shadow-777777);
 }
 /* Blog Part End*/
+
+/* Product Card */
+
+.product-card {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.product-card .product-details h6 {
+  color: var(--color-bf4800);
+  font-size: 13px;
+}
+.product-card .product-details h5 {
+  font-size: 15px;
+  color: var(--color-1c1c1b);
+}
+.product-card .product-details p.price {
+  font-size: 16px;
+  color: var(--color-1c1c1b);
+}
+/* Product Card End */
