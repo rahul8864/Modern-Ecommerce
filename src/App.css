@@ -285,6 +285,30 @@ footer .input-group-text {
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 720px) {
+  .product-card .product-image {
+    height: 270px;
+  }
+}
+.product-card .product-image img {
+  object-fit: contain;
+}
+
+.product-card .product-image > img:last-child {
+  display: none;
+}
+.product-card:hover .product-image > img:first-child {
+  display: none;
+  transition: 700ms ease-in;
+}
+.product-card:hover .product-image > img:last-child {
+  display: block;
+}
+.product-card:hover .action-bar {
+  right: 10px;
 }
 .product-card .product-details h6 {
   color: var(--color-bf4800);
@@ -298,4 +322,22 @@ footer .input-group-text {
   font-size: 16px;
   color: var(--color-1c1c1b);
 }
+
+.action-bar {
+  top: 10%;
+  right: -23px;
+}
+
+.wishlist-icon {
+  top: 3%;
+  right: 15px;
+}
 /* Product Card End */
+
+/* special Card */
+.special-product-card {
+  padding: 10px;
+  border: 10px;
+  background-color: #fff;
+}
+/* special Card  End */
